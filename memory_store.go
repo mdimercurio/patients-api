@@ -95,9 +95,9 @@ func (s *MemoryStore) AddPatient(in *Patient) error {
 
 	s.mutex.Lock()
 	s.patients = append(s.patients, in)
+	s.writePatient(in)
 	s.mutex.Unlock()
 
-	s.writePatient(in)
 	return nil
 }
 
