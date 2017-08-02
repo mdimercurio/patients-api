@@ -6,7 +6,7 @@ Implementation of the API defined in [swagger.yml](swagger.yml)
 
 ```sh
 ./dockerbuild.sh
-docker run patients-api:latest
+docker run -p 8080:8080 patients-api:latest
 ```
 
 

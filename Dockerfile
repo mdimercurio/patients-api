@@ -2,9 +2,7 @@ FROM busybox
 
 WORKDIR /app
 
-MKDIR /data
-
-ENV DATA_PATH /data/patients.json
+ENV DATA_PATH /patients.json
 
 COPY patients-api /app/patients-api
 
